@@ -1,0 +1,12 @@
+numpy
+matplotlib
+torch
+torchvision
+tqdm
+opencv-python
+tensorboard
+PyYAML
+h5py
+pandas
+torchdiffeq
+torchmetrics==0.11.1

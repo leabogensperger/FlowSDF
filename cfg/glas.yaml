@@ -1,0 +1,51 @@
+general:
+    modality: glas 
+    corr_mode: sdf # sdf, binary
+    img_cond: 1 # condition on image to obtain segmentation mask
+    data_path: "" # TODO: adapt data path
+    csv_train: "train.csv"
+    csv_test: "test.csv" 
+    batch_size: 4 
+    sz: 128 
+    resume_training: False
+    load_path: ''
+    resume_model_dir: 'models' 
+    resume_cp: None # None or specific cp
+    class_label_cond: False 
+    num_classes: 0
+    with_class_label_emb: False
+  
+model:
+    n_cin: 1 # 1, n_classes for multi-class segmentation
+    n_fm: 128 
+    mults:
+      - 1
+      - 1
+      - 2
+      - 2
+      - 4
+      - 4
+  
+learning:
+    epochs: 500000
+    lr: 1.0E-4
+    n_val: 8
+    ema_decay: 0.9999
+    clip: 1. # or set to None else
+    gpus:
+      - 1
+  
+fm:
+    type: 'ot'
+    sigma_min: 1.0E-3
+  
+inference:
+    latest: False
+    load_exp: ''
+    load_model_dir: 'models' # models vs models_sanity
+    load_cp: None # 'checkpoint_epoch_0008060.pt' # None or specific cp
+    n_samples: 4 # 32 if all are evaluated
+    thresh: 1.0E-2 # threshold to get binary from SDF
+    ode_steps: 4 # NFE
+    n_eval: 1 # number of evaluation runs
+    merge_overlap: True

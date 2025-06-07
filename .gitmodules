@@ -1,0 +1,3 @@
+[submodule "SimulationHelper"]
+	path = SimulationHelper
+	url = git@github.com:f-ilic/SimulationHelper.git
