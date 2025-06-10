@@ -7,7 +7,8 @@ This repository contains the official implementation of the paper:
 
 [Lea Bogensperger](https://leabogensperger.github.io), [Dominik Narnhofer](https://scholar.google.com/citations?user=tFx8AhkAAAAJ&hl=en), [Alexander Falk](https://scholar.google.com/citations?user=kdzT5mgAAAAJ&hl=en&oi=ao), [Konrad Schindler](https://scholar.google.com/citations?user=FZuNgqIAAAAJ&hl=en&oi=ao), [Thomas Pock](https://scholar.google.com/citations?user=FwNaHxQAAAAJ&hl=en&oi=ao)
 
----
+<img src="assets/flowsdf.png" alt="" width="600"/>
+
 
 ## 🔧 Getting Started
 
@@ -43,7 +44,6 @@ python sampler.py --config "cfg/monuseg.yaml"
 
 ```
 
----
 
 ## Citation
 
